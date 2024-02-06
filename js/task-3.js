@@ -3,8 +3,8 @@
 function checkForSpam(message) {
     const spam = message.toLowerCase();
     if (spam.includes("spam") || (spam.includes("sale")) ) {
-        return true
-    } else { return false }
+        return true;
+    } else { return false; }
     }
 
 console.log(checkForSpam("Latest technology news")); // false
