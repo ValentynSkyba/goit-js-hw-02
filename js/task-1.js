@@ -1,7 +1,7 @@
 "use strict"
 
-const makeTransaction = (quantity, pricePerDroid, customerCredits) => {
-    let totalPrice = quantity * pricePerDroid;
+function makeTransaction (quantity, pricePerDroid, customerCredits) {
+    const totalPrice = quantity * pricePerDroid;
     if (totalPrice > customerCredits) {
         return "Insufficient funds!";
     } else {
