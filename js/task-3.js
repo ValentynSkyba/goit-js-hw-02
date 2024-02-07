@@ -1,11 +1,17 @@
 "use strict"
 
+// old code
+// function checkForSpam(message) {
+//     const spam = message.toLowerCase();
+//     if (spam.includes("spam") || (spam.includes("sale")) ) {
+//         return true;
+//     } else { return false; }
+// }
+    
 function checkForSpam(message) {
-    const spam = message.toLowerCase();
-    if (spam.includes("spam") || (spam.includes("sale")) ) {
-        return true;
-    } else { return false; }
-    }
+    const normalizedMessage = message.toLowerCase();
+    return normalizedMessage.includes("spam") || normalizedMessage.includes("sale");
+}
 
 console.log(checkForSpam("Latest technology news")); // false
 console.log(checkForSpam("JavaScript weekly newsletter")); // false
